@@ -1,0 +1,115 @@
+/*
+Jojo Mills
+Final Project
+Web Programming 337
+April 24, 2019
+
+this page gives the page style and formats it to the page
+
+
+*/
+#aboveBoard{
+	justify-content: space-between;
+	font-family: Arial, sans-serif;
+}
+#aboveBoard, #gameArea{
+	width: 640px;
+}
+#aboveBoard, #leaderInfo{
+	display: flex;
+}
+
+#add, #new, #start{
+	font-size: 14px;
+	width: 125px;
+}
+#playerName,#add, #new, #start{
+	margin-top: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block; 
+}
+body, #start{
+	color: white;
+	background-color: black;
+	}
+#board{
+	padding: 5px;
+}
+body{
+	font-family: Helvetica, "Times New Roman", Georgia, serif;
+}
+
+canvas{
+	border: solid 2px white;
+}
+#col2{
+	padding-top: 33px;
+}
+#displayScore{
+	font-size: 25px;
+	color: #50BFE6;
+	text-align: center;
+}
+#displayScore, #status, h1, #gameArea{
+	text-align: center;
+}
+#displayScore, #aboveBoard, #board{
+	font-size: 25px;
+}
+#gameArea{
+	height: 600px;
+    left: 275px;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+#gameArea, #leaderboard{
+	position:absolute;
+}
+h1{
+	letter-spacing: 10px;
+	font-size: 40px;
+}
+#leaderboard{
+	top: 125px;
+    left: 395px;
+    width: 400px;
+    height: 340px;
+    z-index: 5;
+    border: white solid 5px;
+    background-color: black;
+
+}
+#leaderInfo{
+	justify-content: space-around;
+	padding-top: 5px;
+}
+#newScore > div{
+	color: #E936A7;
+	text-align: center;
+	font-size: 17px;
+	padding-bottom: 8px;
+}
+#playerName{
+	width: 160px;
+	height: 20px;
+	margin-top: 15px;
+	font-size: 15px;
+}
+#scores>div{
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 20px;
+}
+.spanScore{
+	float: right;
+}
+#status{
+	color: #E936A7;
+	padding-top: 10px;
+	font-size: 65px;
+}
+

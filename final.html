@@ -1,0 +1,58 @@
+<!-- 
+Jojo Mills
+Final Project
+Web Programming 337
+April 24, 2019
+
+HTML page. 1 of 4 parts. I created a brick breaker game that allows the user to move around a board
+on a html5 canvas and bounce a ball around with the goal of breaking all of the bricks. This page is 
+the main structure of the page, then the other three give function and style to the page.
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="final.css" />
+		<script type="text/javascript" src="final.js"></script>
+		<title>final</title>
+	</head>
+
+	<body>
+			<div id="gameArea">
+				<h1>STUDY BREAKER</h1>
+				<div id="aboveBoard">
+					<div id="score">score: 0</div>
+					<div id="lives">lives: 3</div>
+				</div>
+				<canvas width=640 height=400 id="canvas"></canvas>
+				<button id="start">Start!</button>
+			</div>
+				<div id="leaderboard">
+					<div id="status"></div>
+					<div id="displayScore"></div>
+					<div id="leaderInfo">
+						<div id="col1">
+							<div id="board">LEADERBOARD</div>
+							<div id="scores">
+								<div id="score1">1. NEW SCORE</div>
+								<div id="score2">2. NEW SCORE</div>
+								<div id="score3">3. NEW SCORE</div>
+								<div id="score4">4. NEW SCORE</div>
+								<div id="score5">5. NEW SCORE</div>
+
+							</div>
+						</div>
+						<div id="col2">
+							<div id="newScore">
+								<div>ADD SCORE TO LEADERBOARD!!!</div>
+								<input type="text" id="playerName" value="TYPE NAME HERE!">
+								<button id="add">ADD SCORE!</button>
+							</div>
+						</div>
+						
+					</div>
+				<button id="new">NEW GAME</button>
+			</div>
+
+	</body>
+</html>
