@@ -1,0 +1,8 @@
+{
+"name": "final.js",
+"description": "brick breaker game",
+"repository": "https://github.com/heroku/final-js",
+"logo": "https://rawgit.com/heroku/final-js/master/public/node.svg"
+,
+"keywords": ["node", "express", "static"]
+}
