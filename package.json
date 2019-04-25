@@ -2,7 +2,7 @@
 "name": "25",
 "version": "1.0.0",
 "description": "example",
-"main": "cookie_service.js",
+"main": "final_service.js",
 "dependencies": {
 "client-sessions": "^0.8.0",
 "cookie-parser": "^1.4.4",
@@ -12,6 +12,7 @@
 },
 "devDependencies": {},
 "scripts": {
+  "start":"node final_service.js"
 "test": "echo \"Error: no test specified\" && exit 1"
 },
 "keywords": [
