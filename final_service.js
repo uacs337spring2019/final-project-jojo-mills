@@ -66,4 +66,4 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 	res.send(JSON.stringify(json));
 })
 
-app.listen(3000);
+app.listen( process.env.PORT);
