@@ -565,7 +565,7 @@ the user could add new scores to the leaderboard. The top 5 scores are shown to 
 		};
 
 
-		let url = "http://localhost:3000";
+		let url =  "https://study-break.herokuapp.com";
 		fetch(url, fetchOptions)
 			.then(checkStatus)
 			.then(function(responseText) {
@@ -581,7 +581,7 @@ the user could add new scores to the leaderboard. The top 5 scores are shown to 
 	}
 
 	function printBoard(){
-		let url = "http://localhost:3000";
+		let url =  "https://study-break.herokuapp.com";
 		fetch(url)
 			.then(checkStatus)
 			.then(function(responseText) {
