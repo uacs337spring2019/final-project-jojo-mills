@@ -607,13 +607,16 @@ the user could add new scores to the leaderboard. The top 5 scores are shown to 
 				
 							for(i = 0; i<json["Scores"].length && i < 5; i++){ //prints the top 5 scores on the leaderboard
 										if(json["Scores"][i]["score"] == undefined){
-											json["Scores"] = json["Scores"].splice(i);
+											json["Scores"] = json["Scores"].splice(i,1);
 										}
-										let userScore = document.createElement("span");	
-										userScore.className = "spanScore";		
-										document.getElementById("score"+(i+1)).textContent = (i+1) + ". " + json["Scores"][i]["player"];
-										document.getElementById("score"+(i+1)).appendChild(userScore);
-										userScore.textContent = json["Scores"][i]["score"];
+										else{
+				
+											let userScore = document.createElement("span");	
+											userScore.className = "spanScore";		
+											document.getElementById("score"+(i+1)).textContent = (i+1) + ". " + json["Scores"][i]["player"];
+											document.getElementById("score"+(i+1)).appendChild(userScore);
+											userScore.textContent = json["Scores"][i]["score"];
+										}
 							}
 
 
