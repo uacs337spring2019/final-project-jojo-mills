@@ -593,7 +593,7 @@ the user could add new scores to the leaderboard. The top 5 scores are shown to 
 								if(json["Scores"].length>=2){ //more than one player to print
 									for(let j=i+1; j<json["Scores"].length; j++){ //ranks the scores in order to print top 5
 
-										if((parseInt(json["Scores"][i]["score"])) <= (parseInt(json["Scores"][j]["score"]))){ //converts to integers that can be compared
+										if((parseInt(json["Scores"][i]["score"])) < (parseInt(json["Scores"][j]["score"]))){ //converts to integers that can be compared
 											let temp = json["Scores"][i];
 											json["Scores"][i] = json["Scores"][j];
 											json["Scores"][j] = temp;
