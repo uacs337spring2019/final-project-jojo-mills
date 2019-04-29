@@ -55,7 +55,7 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 	let file = fs.readFileSync("scoreboard.txt", 'utf8');
 	console.log(file);
 	let lines = file.split("\n"); //splits info when finds new line
-	for(let i =0; i<lines.length-1; i++){
+	for(let i =0; i<lines.length; i++){
 		let info = lines[i].split(":::");
 		let newScore = {};
 		newScore["player"] = info[0]; //puts data into corret format
