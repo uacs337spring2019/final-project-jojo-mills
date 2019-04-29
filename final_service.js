@@ -63,6 +63,11 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 		scoreboard.push(newScore);
 	}
 	json["Scores"] = scoreboard;
+	for(let i =0; i<json["Scores"].length; i++){
+		if(json["Scores"][i]["score"] == undefined){
+			json["Scores"] = json["Scores"].splice(i,1);
+		}
+	}
 	console.log(json);
 	res.send(JSON.stringify(json));
 })
