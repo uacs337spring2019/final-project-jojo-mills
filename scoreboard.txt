@@ -1,1 +1,3 @@
-Jojo:::25
+Jojo:::22
+Liv:::16
+Chuck::27
