@@ -53,7 +53,6 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 	let json = {};
 	let scoreboard = [];
 	let file = fs.readFileSync("scoreboard.txt", 'utf8');
-	console.log(file);
 	let lines = file.split("\n"); //splits info when finds new line
 	for(let i =0; i<lines.length; i++){
 		let info = lines[i].split(":::");
@@ -63,9 +62,11 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 		scoreboard.push(newScore);
 	}
 	json["Scores"] = scoreboard;
+	console.log(json);
 	for(let i =0; i<json["Scores"].length; i++){
 		if(json["Scores"][i]["score"] == undefined){
 			json["Scores"] = json["Scores"].splice(i,1);
+			console.log("hello");
 		}
 	}
 	console.log(json);
