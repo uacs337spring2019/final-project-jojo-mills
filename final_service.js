@@ -63,7 +63,8 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 		scoreboard.push(newScore);
 	}
 	json["Scores"] = scoreboard;
+	console.log(json);
 	res.send(JSON.stringify(json));
 })
 
-app.listen(process.env.PORT);
+app.listen(PORT);
