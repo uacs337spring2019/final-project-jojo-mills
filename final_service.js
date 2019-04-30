@@ -9,7 +9,6 @@ to the GET.
 
 
 */
-
 const express = require("express");
 const app = express();
 
@@ -65,7 +64,7 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 	console.log(json);
 	for(let i =0; i<json["Scores"].length; i++){
 		if(json["Scores"][i]["score"] == undefined){
-			json["Scores"].pop();
+			let removed = json["Scores"][i].splice(i,1);
 		}
 	}
 	console.log(json);
