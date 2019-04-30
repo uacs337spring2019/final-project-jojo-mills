@@ -65,7 +65,7 @@ app.get('/', function (req, res) { //reads url and determines which mode to be i
 	console.log(json);
 	for(let i =0; i<json["Scores"].length; i++){
 		if(json["Scores"][i]["score"] == undefined){
-			json["Scores"].length = json["Scores"].length-1;
+			json["Scores"].pop();
 		}
 	}
 	console.log(json);
